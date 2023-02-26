@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "edibleblocks",
+	"version": "${version}",
+	"name": "EdibleBlocks",
+	"description": "Adds an edible version of every block.",
+	"authors": [
+		"_CuteFox_"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"icon": "assets/edibleblocks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cutefox.edibleblocks.EdibleBlocks"
+		],
+		"client": [
+			"net.cutefox.edibleblocks.EdibleBlocksClient"
+		],
+		"fabric-datagen": [
+			"net.cutefox.edibleblocks.EdibleBlocksDataGenerator"
+		]
+	},
+	"mixins": [
+		"edibleblocks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.14",
+		"minecraft": "~1.19.3",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
